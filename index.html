@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='yodaSpeak'>
+<head>
+	<meta charset="UTF-8">
+	<title>Yoda Speak</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles.css">
+	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js'></script>
+</head>
+<body ng-controller='mainController'>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-4 ">
+				<h1>Yoda Speak</h1>
+				<input type="text" class="form-control text" ng-model='newSpeak' >
+				<button type="text" class="btn yoda" value="Translate" ng-click='speak(newSpeak)' >Translate</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-6">
+				<p>{{changed}}</p>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src='app.js'></script>
+</body>
+</html>
+
